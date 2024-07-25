@@ -1,5 +1,6 @@
+<h1>🧑‍💻 Introduction:</h1>
+
 <div align="center">
-    <h1>🧑‍💻 Introduction:</h1>
     <img src="./src/assets/photo.jpg" alt="foto" width="300px">
 </div>
 
