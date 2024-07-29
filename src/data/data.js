@@ -20,8 +20,8 @@ export const data = [
     img: 'https://i.postimg.cc/fLfRfvgD/Captura-de-tela-20240515-093835.png',
     title: "Personal Portfolio",
     desc: "This project was a personal initiative to create a portfolio website. I was responsible for the entire development process, from design to deployment. The website was built using React, Tailwind CSS, and AOS animations.",
-    link: "https://portifolio-filipecolla.netlify.app",
-    git: "https://github.com/filipecolla/Portfolio",
+    link: "https://portfoliofilipecolla.netlify.app",
+    git: "https://github.com/collafilipe/Portfolio",
   }
   
 ];
