@@ -1,7 +1,7 @@
 <h1>🧑‍💻 Introduction:</h1>
 
 <div align="center">
-    <img src="./src/assets/photo.jpg" alt="foto" width="300px">
+    <img src="./src/assets/image.jpg" alt="foto" width="300px">
 </div>
 
 <div>
