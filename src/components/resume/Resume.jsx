@@ -76,7 +76,7 @@ const Resume = () => {
 
                 </span>
                 <span className=" text-[.9rem] font-semibold text-purple-900 sm:text-base">
-                  19 years old, currently living in São José dos Campos, Brazil.
+                  20 years old, currently living in São José dos Campos, Brazil.
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-black">
                 Hello, my name is Filipe Colla, and I'm currently a dedicated software developer passionate about turning ideas into innovative solutions. I'm constantly seeking challenging opportunities to apply my experience and drive technological development. I have experience and adeptness in teamwork, as well as a keen interest in acquiring more knowledge in the field. I also enjoy playing games and have been programming bots in Python since I was young. I completed my high school education in 2022, and DSM was my first college experience.
