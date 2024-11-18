@@ -41,10 +41,12 @@ const Resume = () => {
 
                 </span>
                 <span className=" text-[.9rem] font-semibold text-purple-900 sm:text-base">
-                  June 2024 - Present
+                  October 2024 - Present
                 </span>
                 <p className=" text-[.9rem] text-justify break-words text-black">
-                I have yet to seize the opportunity to join a company, but rest assured, I am actively pursuing this chance. Eager to contribute my skills and dedication to a dynamic organization, I am committed to making a meaningful impact in the professional realm. My journey towards securing a position in a forward-thinking company is driven by a steadfast determination to excel and grow alongside a team of talented individuals. Open to new challenges and experiences, I am excited about the prospect of contributing positively to the success of an organization that values innovation and teamwork.
+                  I am an intern at Autaza, working in the field of software development with a focus on inspection software. On the backend, I use Django, while on the frontend I work with React, and we manage data using PostgreSQL.
+
+                  I am part of a collaborative team that develops artificial intelligence solutions for inspection, primarily leveraging OpenCV for image processing and applying neural networks. Currently, I am also contributing to the initial stages of a potential future project focused on creating an inspection software for towers, using drones and AI to optimize and enhance the inspection process.
                 </p>
               </div>
             </div>
@@ -55,7 +57,7 @@ const Resume = () => {
             data-aos="zoom-in"
             className=" w-[80%] p-5 py-12 sm:py-8 sm:w-full sm:p-2"
           >
-            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-8 font-semibold text-xl text-black">
+            <legend className=" w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-4 font-semibold text-xl text-black">
               About Me
             </legend>
             <div className=" relative">

@@ -55,7 +55,7 @@ const Skills = ({ darkMode }) => {
                   name={"Javascript"}
                   value={84}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={72} />
+                <ProgressBar logo={<FaReact />} name={"React Js"} value={93} />
                 <ProgressBar
                   logo={<SiPython />}
                   name={"Python"}
@@ -154,6 +154,7 @@ const Skills = ({ darkMode }) => {
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/nodejs.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/html-5--v1.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/css3.png"/>
+          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/?size=48&id=JRnxU7ZWP4mi&format=png&color=000000"/>
         </div>
       </div>
     </div>
