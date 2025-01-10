@@ -8,7 +8,7 @@
     <ul>
         <li><strong>👤 Filipe Colla</strong></li>
         <li><strong>💻 DSM student (Multiplatform Software Development)</strong></li>
-        <li><strong>✏️ Hello, my name is Filipe. I'm 19 years old, and I'm a second-semester student of Multiplatform Software Development at FATEC. Currently, I'm working on this personal portfolio project.</strong></li>
+        <li><strong>✏️ Hello, my name is Filipe. I'm 20 years old, and I'm a second-semester student of Multiplatform Software Development at FATEC. Currently, I'm working on this personal portfolio project.</strong></li>
     </ul>
 </div>
 
