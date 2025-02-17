@@ -70,7 +70,7 @@ const Hero = () => {
               className=" flex gap-5"
             >
               <li>
-                <a href="https://github.com/filipecolla">
+                <a href="https://github.com/collafilipe">
                   {" "}
                   <AiFillGithub className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125" />{" "}
                 </a>
