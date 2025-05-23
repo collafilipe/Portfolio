@@ -108,6 +108,8 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             <a
               href="https://www.linkedin.com/in/filipe-colla/"
               className="bg-white text-[1rem] text-black px-8 py-2 rounded-lg font-bold hover:text-purple-800 md:m-5 md:block md:mx-auto md:w-fit lg:px-3"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               HIRE ME
             </a>

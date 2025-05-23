@@ -50,6 +50,8 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/filipe-colla/"
               className=" bg-white text-[1rem] text-black px-10 py-2 sm:px-8 rounded-lg font-bold  hover:text-purple-800"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <span> Hire Me</span>
             </a>
@@ -70,31 +72,31 @@ const Hero = () => {
               className=" flex gap-5"
             >
               <li>
-                <a href="https://github.com/collafilipe">
+                <a href="https://github.com/collafilipe" target="_blank" rel="noopener noreferrer">
                   {" "}
                   <AiFillGithub className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125" />{" "}
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/filipe-colla/">
+                <a href="https://www.linkedin.com/in/filipe-colla/" target="_blank" rel="noopener noreferrer">
                   {" "}
                   <FaLinkedinIn className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/fi.colla/">
+                <a href="https://www.instagram.com/fi.colla/" target="_blank" rel="noopener noreferrer">
                   {" "}
                   <AiFillInstagram className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/5512997601410?text=Hello,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!">
+                <a href="https://wa.me/5512997601410?text=Hello,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch!" target="_blank" rel="noopener noreferrer">
                   {" "}
                   <RiWhatsappFill className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/CollaFilipe">
+                <a href="https://twitter.com/CollaFilipe" target="_blank" rel="noopener noreferrer">
                   {" "}
                   <AiFillTwitterCircle className="text-white h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
                 </a>

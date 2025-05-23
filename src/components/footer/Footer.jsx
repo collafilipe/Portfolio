@@ -13,27 +13,30 @@ const Footer = () => {
         <div className=" flex items-center justify-center gap-8 sm:gap-5">
           <a 
           data-aos="fade-up" data-aos-duration="1000"
-
             href="https://www.linkedin.com/in/filipe-colla/"
-            className="box font-medium text-white   flex items-center justify-center flex-col"
+            className="box font-medium text-white flex items-center justify-center flex-col"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn className=" text-white text-3xl hover:scale-125 cursor-pointer" />
             <p>Linkedin</p>
           </a>
           <a 
           data-aos="fade-up" data-aos-duration="1200"
-
-            href="wa.me/12997601410"
-            className="box font-medium text-white  flex items-center justify-center flex-col"
+            href="https://wa.me/12997601410"
+            className="box font-medium text-white flex items-center justify-center flex-col"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <IoLogoWhatsapp className=" text-white text-3xl hover:scale-125 cursor-pointer" />
             <p>WhatsApp</p>
           </a>
           <a 
           data-aos="fade-up" data-aos-duration="1400"
-
             href="https://www.instagram.com/fi.colla/"
-            className="box font-medium text-white  flex items-center justify-center flex-col"
+            className="box font-medium text-white flex items-center justify-center flex-col"
+            target="_blank" 
+            rel="noopener noreferrer"
           >
             <RiInstagramFill className=" text-white text-3xl hover:scale-125 cursor-pointer" />
             <p>Instagram</p>
