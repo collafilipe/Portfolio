@@ -1,15 +1,45 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Resume = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState("");
   const [modalTitle, setModalTitle] = useState("");
+  const contentRef = useRef(null);
+  const [showTopFade, setShowTopFade] = useState(false);
+  const [showBottomFade, setShowBottomFade] = useState(false);
   const openModal = (text, title) => {
     setModalContent(text);
     setModalTitle(title);
     setModalOpen(true);
   };
   const closeModal = () => setModalOpen(false);
+  useEffect(() => {
+    if (modalOpen) {
+      const prevDocOverflow = document.documentElement.style.overflow;
+      const prevBodyOverflow = document.body.style.overflow;
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.documentElement.style.overflow = prevDocOverflow || "";
+        document.body.style.overflow = prevBodyOverflow || "";
+      };
+    }
+  }, [modalOpen]);
+
+  const updateFades = () => {
+    const el = contentRef.current;
+    if (!el) return;
+    const atTop = el.scrollTop === 0;
+    const atBottom = Math.ceil(el.scrollTop + el.clientHeight) >= el.scrollHeight;
+    setShowTopFade(!atTop);
+    setShowBottomFade(!atBottom);
+  };
+
+  useEffect(() => {
+    if (modalOpen) {
+      setTimeout(updateFades, 0);
+    }
+  }, [modalOpen]);
   return (
     <div id="resume" className="container m-auto mt-16">
       {/* heading */}
@@ -260,8 +290,8 @@ const Resume = () => {
         </div>
       </div>
       {modalOpen && (
-        <div onClick={closeModal} className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-          <div onClick={(e) => e.stopPropagation()} className="bg-white w-[95%] sm:w-[98%] max-w-[720px] rounded-lg border-2 border-black p-4 sm:p-6 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] max-h-[85vh] overflow-y-auto">
+        <div onClick={closeModal} onWheel={(e)=>e.preventDefault()} onTouchMove={(e)=>e.preventDefault()} className="fixed inset-0 bg-black/30 overscroll-none touch-none flex items-center justify-center z-50">
+          <div onClick={(e) => e.stopPropagation()} ref={contentRef} onScroll={updateFades} className="relative bg-white w-[95%] sm:w-[98%] max-w-[720px] rounded-lg border-2 border-black p-4 sm:p-6 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] max-h-[85vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-3 pt-2 pb-2">
               <h2 className="text-lg sm:text-xl font-semibold text-black">{modalTitle || "Experience Details"}</h2>
               <button onClick={closeModal} className="px-3 py-1 border-2 border-black rounded-md font-semibold">Fechar</button>
@@ -269,6 +299,12 @@ const Resume = () => {
             <pre className="whitespace-pre-wrap break-words text-[.9rem] sm:text-[.95rem] text-black leading-relaxed mt-1">
               {modalContent}
             </pre>
+            {showTopFade && (
+              <div aria-hidden="true" className="absolute top-0 left-0 right-0 h-6 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
+            )}
+            {showBottomFade && (
+              <div aria-hidden="true" className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+            )}
           </div>
         </div>
       )}
