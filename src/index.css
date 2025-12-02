@@ -112,3 +112,25 @@ html {
     margin-top: 5rem;
   }
 }
+/* line clamp utilities */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+}
+/* hover hint for clickable cards */
+.hoverable-card {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.hoverable-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  border-color: #6b21a8; /* purple-800 */
+}

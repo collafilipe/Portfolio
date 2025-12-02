@@ -52,10 +52,10 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
   return (
     <div
       className={`w-full mx-auto  fixed top-0 py-5 sm:py-4 z-30 ${
-        scrollPosition > 0 ? `bg-black shadow-md` : "bg-transparent"
+        scrollPosition > 0 || isOpen ? `bg-black shadow-md` : "bg-transparent"
       } `}
     >
-      <nav className=" container m-auto flex items-center justify-between">
+      <nav className=" container m-auto flex items-center justify-between relative">
         <div data-aos="fade-down" className="logo">
           <Link
             onClick={() => window.scrollTo(0, 0)}
@@ -65,10 +65,7 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             Filipe Colla
           </Link>
         </div>
-        <div
-          data-aos="fade-down"
-          className="nav-items flex items-center space-x-11"
-        >
+        <div className="nav-items flex items-center gap-6">
           {/* hamburger */}
           <button
             onClick={toggleNav}
@@ -77,10 +74,17 @@ const NavBar = ({ toggleDarkMode, darkMode }) => {
             <HiMenu size={25} />
           </button>
 
+          {isOpen && (
+            <div
+              className="fixed inset-0 bg-transparent z-30"
+              onClick={() => setIsOpen(false)}
+            ></div>
+          )}
+
           <ul
-            className={`flex items-center space-x-11 ${
-              !isOpen ? "md:flex" : "md:right-[0%]"
-            } md:flex-col md:absolute m-auto md:top-0 md:right-[-100%] md:w-[78%] md:h-screen md:bg-black `}
+            className={`flex items-center gap-6 ${
+              !isOpen ? "md:flex" : "md:right-[0%] gap-0"
+            } md:flex-col md:fixed md:top-0 md:right-[-100%] md:w-[65%] md:h-screen md:bg-black md:z-40 md:items-center md:text-center md:pt-8 `}
           >
             {/* Use a button tag for better accessibility */}
             <button

@@ -6,16 +6,17 @@ import { IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from "react-icons/io";
 
 
 import {
-  SiJavascript,
-  SiTailwindcss,
   SiMongodb,
-  SiExpress,
-  SiJava,
-  SiTypescript,
-  SiMysql,
-  SiPython,
-  SiGithub,
-  SiNodedotjs,
+  SiGooglecloud,
+  SiFirebase,
+  SiFlutter,
+  SiKotlin,
+  SiLinux,
+  SiRedis,
+  SiRedhat,
+  SiXampp,
+  SiAzuredevops,
+  SiMicrosoftazure,
 } from "react-icons/si";
 import { GrCode } from "react-icons/gr";
 import { SiNextdotjs } from "react-icons/si";
@@ -48,20 +49,20 @@ const Skills = ({ darkMode }) => {
               className="progress flex items-center h-[100%] justify-end md:justify-center"
             >
               <div className=" flex flex-col gap-6  w-3/4  my-5 md:w-[90%]">
-                <ProgressBar logo={<SiTypescript />} name={"TypeScript"} value={95} />
-                <ProgressBar logo={<SiJava />} name={"Java"} value={88} />
+                <ProgressBar logo={<SiKotlin />} name={"Kotlin"} value={95} />
+                <ProgressBar logo={<SiMongodb />} name={"MongoDB"} value={88} />
                 <ProgressBar
-                  logo={<SiJavascript />}
-                  name={"Javascript"}
+                  logo={<SiLinux />}
+                  name={"Linux"}
                   value={84}
                 />
-                <ProgressBar logo={<FaReact />} name={"React Js"} value={93} />
+                <ProgressBar logo={<SiFlutter />} name={"Flutter"} value={93} />
                 <ProgressBar
-                  logo={<SiPython />}
-                  name={"Python"}
+                  logo={<SiRedis />}
+                  name={"Redis"}
                   value={93}
                 />
-                <ProgressBar logo={<SiNodedotjs />} name={"Node Js"} value={85} />
+                <ProgressBar logo={<SiFirebase />} name={"Firebase"} value={85} />
               </div>
             </div>
           </div>
@@ -69,24 +70,24 @@ const Skills = ({ darkMode }) => {
           <div className="right relative flex-1 flex flex-wrap p-5 gap-10 items-center justify-center sm:w-full">
             <div className="first2 flex flex-col gap-10">
               <SkillBox
-                logo={<FaDocker />}
+                logo={<SiMicrosoftazure />}
                 black={"white"}
                 white={"black"}
-                skill={"Docker"}
+                skill={"Azure"}
               />
               <SkillBox
-                logo={<SiMysql />}
+                logo={<SiRedhat />}
                 black={"white"}
                 white={"black"}
-                skill={"MySql"}
+                skill={"Red Hat OKD"}
               />
             </div>
             <div className="last2 flex flex-col gap-10">
               <SkillBox
-                logo={<FaGitAlt />}
+                logo={<SiGooglecloud />}
                 black={"black"}
                 white={"white"}
-                skill={"Git"}
+                skill={"Google Cloud"}
               />
               <SkillBox
                 className=""
@@ -146,15 +147,13 @@ const Skills = ({ darkMode }) => {
             className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
             src="https://img.icons8.com/external-those-icons-flat-those-icons/48/external-Docker-Logo-social-media-those-icons-flat-those-icons.png"
           />
-          <img
-            className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]"
-            src="https://img.icons8.com/color/48/amazon-web-services.png"
-          />
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/javascript--v1.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/null/nodejs.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/html-5--v1.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/color/48/css3.png"/>
           <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://img.icons8.com/?size=48&id=JRnxU7ZWP4mi&format=png&color=000000"/>
+          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg"/>
+          <img className="w-[40px] h-[40px] md:w-[35px] md:h-[35px]" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xml/xml-original.svg"/>
         </div>
       </div>
     </div>
