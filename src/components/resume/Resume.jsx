@@ -291,7 +291,7 @@ const Resume = () => {
       </div>
       {modalOpen && (
         <div onClick={closeModal} onWheel={(e)=>e.preventDefault()} onTouchMove={(e)=>e.preventDefault()} className="fixed inset-0 bg-black/30 overscroll-none touch-none flex items-center justify-center z-50">
-          <div onClick={(e) => e.stopPropagation()} ref={contentRef} onScroll={updateFades} className="relative bg-white w-[95%] sm:w-[98%] max-w-[720px] rounded-lg border-2 border-black p-4 sm:p-6 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] max-h-[85vh] overflow-y-auto">
+          <div onClick={(e) => e.stopPropagation()} ref={contentRef} onScroll={updateFades} className="relative bg-white w-[95%] sm:w-[98%] max-w-[720px] rounded-lg border-2 border-black p-4 sm:p-6 shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] max-h-[85vh] overflow-y-auto modal-scroll">
             <div className="flex items-center justify-between mb-3 pt-2 pb-2">
               <h2 className="text-lg sm:text-xl font-semibold text-black">{modalTitle || "Experience Details"}</h2>
               <button onClick={closeModal} className="px-3 py-1 border-2 border-black rounded-md font-semibold">Fechar</button>
