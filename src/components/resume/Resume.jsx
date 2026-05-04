@@ -41,7 +41,7 @@ const Resume = () => {
     }
   }, [modalOpen]);
   return (
-    <div id="resume" className="container m-auto mt-16 px-4 sm:px-5">
+    <div id="resume" className="container m-auto mt-16">
       {/* heading */}
       <div data-aos="fade-up" className="relative mb-5">
         <h3 className="text-3xl font-black text-black sm:text-2xl">
@@ -56,11 +56,11 @@ const Resume = () => {
       </div>
       
       {/* First row - 3 cards */}
-      <div className="first-row w-full mt-5 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 sm:gap-5">
-        <div className="w-full flex items-center justify-center">
+      <div className="first-row w-[100%] sm:w-full mt-5 flex flex-row flex-wrap gap-4 sm:gap-4 mx-auto justify-center">
+        <div className="flex-1 flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className="w-full max-w-[420px] p-3 sm:p-2"
+            className="w-[90%] max-w-[420px] p-5 py-8 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className="w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-8 font-semibold text-xl text-black">
               Experience
@@ -82,7 +82,7 @@ const Resume = () => {
                     "Autaza - Software Development Intern I"
                   )
                 }
-                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[280px]"
+                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg"
               >
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Professional Experience
@@ -106,10 +106,10 @@ const Resume = () => {
             </div>
           </fieldset>
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className="w-full max-w-[420px] p-3 sm:p-2"
+            className="w-[90%] max-w-[420px] p-5 py-8 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className="w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-8 font-semibold text-xl text-black">
               Experience
@@ -131,7 +131,7 @@ const Resume = () => {
                     "Autaza - Software Development Intern III"
                   )
                 }
-                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[280px]"
+                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg"
               >
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Professional Experience
@@ -154,10 +154,10 @@ const Resume = () => {
             </div>
           </fieldset>
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className="w-full max-w-[420px] p-3 sm:p-2"
+            className="w-[90%] max-w-[420px] p-5 py-8 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className="w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-8 font-semibold text-xl text-black">
               Experience
@@ -177,7 +177,7 @@ const Resume = () => {
                     "Autaza - Junior Software Developer"
                   )
                 }
-                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[280px]"
+                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg"
               >
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Professional Experience
@@ -202,11 +202,11 @@ const Resume = () => {
       </div>
 
       {/* Second row - Education + About Me */}
-      <div className="second-row w-full mt-8 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 sm:gap-5">
-        <div className="w-full flex items-center justify-center">
+      <div className="second-row w-[100%] sm:w-full mt-8 flex justify-center flex-row flex-wrap gap-2 sm:gap-2 mx-auto">
+        <div className="flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className="w-full max-w-[420px] p-3 sm:p-2"
+            className="w-[90%] max-w-[420px] p-5 py-8 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className="w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-8 font-semibold text-xl text-black">
               Education
@@ -227,7 +227,7 @@ const Resume = () => {
                     "I'm currently studying Software Development Multiplatform at FATEC - São José dos Campos. Exploring web, mobile, and desktop application development, along with APIs, microservices, databases, and cloud services. My tech journey started with a love for gaming and tinkering with Python since high school. Now, I'm honing skills in Java, JavaScript, and Python, as well as frameworks like React. I'm also learning cloud services like AWS. I'm excited to continue growing as a developer."
                   )
                 }
-                className="hoverable-card cursor-pointer flex flex-col gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[280px]"
+                className="hoverable-card cursor-pointer flex flex-col gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[240px]"
               >
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">
                   Software Development Multiplataform
@@ -238,22 +238,19 @@ const Resume = () => {
                 <span className="text-[.9rem] font-semibold text-black sm:text-base">
                   Year 2023 - Year 2026
                 </span>
-                <p className="text-[.9rem] text-justify text-black line-clamp-3">
-                  I'm currently studying Software Development Multiplatform at FATEC - São José dos Campos, with focus on web, mobile, and desktop applications, plus APIs, microservices, databases, and cloud services.
-                </p>
-                <p className="text-[.9rem] text-justify text-black mt-2 line-clamp-3">
-                  My journey started in high school with Python and game-related automation. Today, I'm deepening Java, JavaScript, Python, React, and AWS skills while building a strong full-stack foundation.
-                </p>
-                <span className="text-[.9rem] text-black font-semibold">...</span>
+                  <p className="text-[.9rem] text-justify text-black line-clamp-3">
+                    I'm currently studying Software Development Multiplatform at FATEC - São José dos Campos. Exploring web, mobile, and desktop application development, along with APIs, microservices, databases, and cloud services. My tech journey started with a love for gaming and tinkering with Python since high school. Now, I'm honing skills in Java, JavaScript, and Python, as well as frameworks like React. I'm also learning cloud services like AWS. I'm excited to continue growing as a developer.
+                  </p>
+                  <span className="text-[.9rem] text-black font-semibold">...</span>
                 
               </div>
             </div>
           </fieldset>
         </div>
-        <div className="w-full flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <fieldset
             data-aos="zoom-in"
-            className="w-full max-w-[420px] p-3 sm:p-2"
+            className="w-[90%] max-w-[420px] p-5 py-8 sm:py-8 sm:w-full sm:p-2"
           >
             <legend className="w-auto ml-[50%] translate-x-[-50%] border-2 border-black rounded-3xl py-1 px-4 font-semibold text-xl text-black">
               About Me
@@ -272,9 +269,10 @@ const Resume = () => {
                     "Hello, my name is Filipe Colla, and I'm currently a dedicated software developer passionate about turning ideas into innovative solutions. I'm constantly seeking challenging opportunities to apply my experience and drive technological development. I have experience and adeptness in teamwork, as well as a keen interest in acquiring more knowledge in the field. I also enjoy playing games and have been programming bots in Python since I was young. I completed my high school education in 2022, and DSM was my first college experience."
                   )
                 }
-                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[280px]"
+                className="hoverable-card cursor-pointer flex flex-col gap-1 sm:gap-1 border-2 border-black shadow-[0px_0px_16px_1px_rgba(0,0,0,0.1)] p-3 rounded-lg h-[240px]"
               >
                 <h1 className="text-[1.4rem] font-semibold sm:text-xl">Filipe Colla</h1>
+                <span className="text-[.9rem] font-semibold text-black sm:text-base"></span>
                 <span className="text-[.9rem] font-semibold text-purple-900 sm:text-base">
                   20 years old, currently living in São José dos Campos, Brazil.
                 </span>
